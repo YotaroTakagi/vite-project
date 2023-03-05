@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { defineComponent, ref, onMounted } from 'vue'
-import { store } from '../store.ts'
 
 let date = ref('');
 const updateTime = () => {
@@ -22,7 +21,7 @@ setInterval(updateTime, 6000);
     <div>
         {{ date }}
     </div>
-    <div>Count:{{ store.count }}</div>
+    
 </template>
 
 <style scoped>

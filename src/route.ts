@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import test2 from '../components/test2.vue'
+import StopWatch from './components/StopWatch.vue'
+import Timer from './components/Timer.vue'
 
 const Home = { template: '<div>Home</div>' }
 const About = { template: '<div>About</div>' }
 
 const routes = [
-  { path: '/', component: test2 },
   { path: '/about', component: About },
+  { path: '/stop_watch', component: StopWatch },
+  { path: '/timer', component: Timer },
 ]
 
 const router = createRouter({
